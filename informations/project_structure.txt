@@ -1,0 +1,27 @@
+|-- cmd                                     - contain the application specific code
+|   `-- web
+|       |-- handlers.go
+|       `-- main.go
+|-- go.mod
+|-- hello
+|   `-- hello.go
+|-- informations
+|   `-- project_structure.txt
+|-- instructions
+|   |-- go-install.txt
+|   |-- setup_instructions.txt
+|   |-- url_actions.ods
+|   `-- web_app_basics.txt
+|-- internal                                - contain ancillary non-application specific code used in project. We will use it to hold potentially reusable code like validation helpers and SQL database models for project. Any code in internall cannot be imported by code outside of our project. 
+|-- start.sh
+|-- tools.txt
+`-- ui                                      - contains the user interface assets used by web application.
+    |-- html                                    - contain the html templates
+    |-- index.html
+    `-- static                                  - contains the static files like css and images.
+
+
+
+**************Structure insights****************
+1. This gives a clean seperation betwenn Go and non-Go assets
+2. scales really nicelly if you want to add another execuatable application.

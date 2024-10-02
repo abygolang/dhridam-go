@@ -1,0 +1,13 @@
+1. create top folder
+2. choose a module path
+	In go module path as a basically being a cononical name or identifier for your project.
+3.Turn project directory into a module 	
+	module path should be unique and unlikely to used by anything else to avoid
+	base your module paths on a URL that you own
+
+	$proj dir$ go mod init <module path> www.dhridam.com
+
+	advantages of project as a module:
+		- easy to manage 3rd party applications
+		- avoid supply-chain-attacks()
+		- ensure reproducable build of the applications

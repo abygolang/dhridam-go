@@ -1,0 +1,26 @@
+{{define "title"}}Home{{end}}
+{{define "css"}} 
+<link rel="stylesheet" href="../../static/css/home.css">
+{{end}}
+{{define "main"}}
+
+<div class="main">
+    <div class="navbar">
+        <img src="../../static/img/logo.jpg" class="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </div>
+    <div class="text">
+        <h1>DESIGN YOUR HOUSE</h1>
+        <p>A home is a place that gives comfort to everyone and a home is filled with love and life.</p>
+        <div>
+            <button type="button" aria-label="Explore the design tools" onclick="location.href='/VR'">VR</button>
+            <button type="button" aria-label="Register for more features" onclick="location.href='/Videos'">Videos</button>
+        </div>
+    </div>
+</div>
+{{end}}

@@ -1,0 +1,7 @@
+Handler - They are responsible for executing your application logic and for writing HTTP response headers and bodies.
+		MVC - model-view-controller
+router/servemux in Go terminology - Stores a mapping between URL patterns for application and corresponding handlers.
+		Usually you have 1 servemux for your application containing all your routes.
+web server - You can establish a web server and listen for incoming requests as part of your application itself. You don't need an external / third party server like appache or Nginx
+
+Put these components together in main.go file to make a working application 
